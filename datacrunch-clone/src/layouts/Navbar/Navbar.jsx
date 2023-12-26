@@ -1,6 +1,10 @@
-import { navbar, navigator, auth } from './Navbar.module.css';
+import { navbar, navigator, auth, hamburg } from './Navbar.module.css';
+import hamburgIcon from '../../assets/hamburg.svg';
+import { useState } from 'react';
 
 export default function Navbar() {
+  const [mobileMenu, setMobileMenu] = useState(false);
+
   return (
     <div className={navbar}>
       <img src="https://datacrunch.io/_next/static/media/Logo.99886008.svg" alt="logo" />
@@ -15,6 +19,7 @@ export default function Navbar() {
         <span>Login</span>
         <button>Signup</button>
       </div>
+      <img src={hamburgIcon} alt="hamburg" className={hamburg} onClick={() => setMobileMenu(true)} />
     </div>
   )
 }

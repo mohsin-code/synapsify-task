@@ -26,3 +26,47 @@
   gap: 10px;
   display: flex;
 }
+
+.hamburg {
+  display: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .navbar > img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .auth {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    top: calc(3 * 35px + 8px);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  
+  .navbar > img {
+    display: block;
+    padding: 0 2rem;
+  }
+
+  .navigator {
+    display: none;
+  }
+
+  .hamburg {
+    display: block;
+    padding: 0 2rem;
+  }
+}

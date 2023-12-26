@@ -7,13 +7,13 @@
   justify-content: center;
   gap: 12px;
   align-items: center;
-  flex-direction: row;
   height: 48px;
   color: #FFF;
 }
 
 .option {
-  
+  display: flex;
+  gap: 12px;
 }
 
 .boldoption {
@@ -22,4 +22,25 @@
 
 .underlinedoption {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+  .news {
+    flex-direction: column;
+    height: calc(3 * 35px + 8px);
+    text-align: center;
+    gap: 0;
+    padding: 4px 0;
+  }
+
+  .news > * {
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .option {
+  }
 }
