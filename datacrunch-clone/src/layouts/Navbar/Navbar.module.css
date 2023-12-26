@@ -1,5 +1,6 @@
 .navbar {
   display: flex;
+  background-color: white;
   top: 48px;
   width: 100%;
   align-items: center;
@@ -21,10 +22,7 @@
 }
 
 .auth {
-  gap: 10px;
   font-weight: 700;
-}
-
-.auth {
+  gap: 10px;
   display: flex;
 }

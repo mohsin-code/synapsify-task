@@ -8,9 +8,11 @@ button {
   color: white;
   font-weight: 700;
   padding: 0.5rem 1rem;
-  font-size: 18px;
   border-radius: 0.5rem;
   cursor: pointer;
   border: none;
   background-color: #245866;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
