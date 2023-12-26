@@ -2,7 +2,29 @@
   display: flex;
   top: 48px;
   width: 100%;
+  align-items: center;
+  justify-content: space-around;
   position: fixed;
   min-height: 64px;
   border-bottom: solid rgba(182, 181, 181, 0.5) 1px;
+}
+
+.navigator {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar span {
+  padding: 0.5rem;
+  color: #707070;
+  cursor: pointer;
+}
+
+.auth {
+  gap: 10px;
+  font-weight: 700;
+}
+
+.auth {
+  display: flex;
 }
